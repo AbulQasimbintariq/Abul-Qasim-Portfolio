@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  background: #020617;
+  color: white;
+  font-family: Inter, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light {
+  background: #f8f9fa;
+  color: #1a1a1a;
+}
+
+body.light .gradient-btn {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: white;
+}
+
+/* Light mode: Navbar */
+body.light nav {
+  background: rgba(248, 249, 250, 0.95);
+  border-color: #e5e7eb;
+}
+
+body.light nav button,
+body.light nav a {
+  color: #1a1a1a;
+}
+
+body.light nav a:hover {
+  color: #3b82f6;
+}
+
+body.light nav .border-white\/10 {
+  border-color: #e5e7eb;
+}
+
+body.light nav .bg-white\/5 {
+  background: #f3f4f6;
+}
+
+body.light section,
+body.light h2,
+body.light h3,
+body.light h4,
+body.light h5,
+body.light h6 {
+  color: #1a1a1a;
+}
+
+body.light .text-slate-400 {
+  color: #6b7280;
+}
+
+body.light .bg-slate-800,
+body.light .bg-slate-900 {
+  background: #f3f4f6;
+  border-color: #e5e7eb;
+}
+
+body.light footer {
+  background: #f3f4f6;
+  border-top: 1px solid #e5e7eb;
+}
+
+::selection {
+  background: #3b82f6;
+  color: white;
+}
+
+/* body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #0f172a;
+  color: white;
+  font-family: Inter, sans-serif;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gradient-btn {
+  @apply px-6 py-3 rounded-xl font-medium transition-all duration-300;
+  background: linear-gradient(135deg,
+      #3b82f6,
+      #8b5cf6);
+}
+
+.gradient-btn:hover {
+  transform: translateY(-2px);
+}

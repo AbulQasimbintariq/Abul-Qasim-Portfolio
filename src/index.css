@@ -1,14 +1,75 @@
 @import "tailwindcss";
 
+/* Responsive Typography & Accessibility */
 :root {
   color-scheme: light dark;
+  
+  /* Responsive font sizes */
+  @media (max-width: 640px) {
+    font-size: 14px;
+  }
+  @media (min-width: 641px) and (max-width: 1024px) {
+    font-size: 15px;
+  }
+  @media (min-width: 1025px) {
+    font-size: 16px;
+  }
+}
+
+/* Focus states for keyboard navigation (a11y) */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Skip link styles */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  background: rgba(2,6,23,0.9);
+  color: #fff;
+  z-index: 9999;
+  border-radius: 6px;
+}
+
+/* Improved touch targets (min 44px for accessibility) */
+button,
+a[href],
+input,
+select,
+textarea {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Responsive image optimization */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 body {
   background: #020617;
   color: white;
-  font-family: Inter, sans-serif;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body.light {
@@ -68,19 +129,37 @@ body.light footer {
   border-top: 1px solid #e5e7eb;
 }
 
-::selection {
-  background: #3b82f6;
-  color: white;
+/* Improved link styling with better visibility */
+a {
+  color: inherit;
+  transition: color 0.3s ease;
 }
 
-/* body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: #0f172a;
-  color: white;
-  font-family: Inter, sans-serif;
-} */
+a:hover {
+  color: #3b82f6;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Print styles for better responsiveness */
+@media print {
+  body {
+    background: white;
+    color: #000;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
 
 html {
   scroll-behavior: smooth;

@@ -1,19 +1,23 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { SiVercel } from "react-icons/si";
 import projects from "../data/projects";
 
 function Projects() {
   return (
     <section
       id="projects"
-      className="py-32 px-6 max-w-7xl mx-auto"
+      className="py-12 sm:py-16 md:py-32 px-4 sm:px-6 max-w-7xl mx-auto"
     >
       {/* Heading */}
 
-      <div className="text-center mb-16">
+      <div className="text-center mb-12 sm:mb-14 md:mb-16">
         <h2
           className="
-          text-5xl
+          text-2xl
+          sm:text-3xl
+          md:text-4xl
+          lg:text-5xl
           font-bold
           mb-4
           bg-linear-to-r
@@ -26,7 +30,7 @@ function Projects() {
           Featured Projects
         </h2>
 
-        <p className="text-slate-400 max-w-2xl mx-auto">
+        <p className="text-sm sm:text-base text-slate-400 max-w-2xl mx-auto leading-relaxed">
           A collection of projects showcasing my frontend
           development skills and passion for creating
           exceptional user experiences.
@@ -35,7 +39,7 @@ function Projects() {
 
       {/* Grid */}
 
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 md:gap-8">
         {projects.map((project) => (
           <motion.div
             key={project.id}
@@ -62,9 +66,14 @@ function Projects() {
               <img
                 src={project.image}
                 alt={project.title}
+                loading="lazy"
+                decoding="async"
+                fetchpriority="low"
                 className="
                 w-full
-                h-56
+                h-40
+                sm:h-48
+                md:h-56
                 object-cover
                 transition-all
                 duration-700
@@ -76,10 +85,12 @@ function Projects() {
 
             {/* Content */}
 
-            <div className="p-6">
+            <div className="p-4 sm:p-5 md:p-6">
               <h3
                 className="
-                  text-2xl
+                  text-lg
+                  sm:text-xl
+                  md:text-2xl
                   font-bold
                   mb-3
                 "
@@ -89,6 +100,8 @@ function Projects() {
 
               <p
                 className="
+                  text-xs
+                  sm:text-sm
                   text-slate-400
                   mb-5
                   leading-relaxed
@@ -104,13 +117,15 @@ function Projects() {
                   <span
                     key={tech}
                     className="
-                      px-3
+                      px-2
+                      sm:px-3
                       py-1
                       rounded-full
                       bg-blue-500/10
                       border
                       border-blue-500/20
-                      text-sm
+                      text-xs
+                      sm:text-sm
                     "
                   >
                     {tech}
@@ -120,23 +135,31 @@ function Projects() {
 
               {/* Buttons */}
 
-              <div className="flex gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noreferrer"
+                  aria-label={`Open ${project.title} GitHub repository`}
                   className="
                     flex-1
                     flex
                     justify-center
                     items-center
                     gap-2
-                    py-3
+                    py-2
+                    sm:py-3
+                    px-3
+                    sm:px-4
+                    text-sm
+                    sm:text-base
                     rounded-xl
                     border
                     border-slate-700
                     hover:border-blue-500
+                    hover:shadow-lg
                     transition
+                    min-h-10
                   "
                 >
                   <FaGithub />
@@ -147,24 +170,66 @@ function Projects() {
                   href={project.demo}
                   target="_blank"
                   rel="noreferrer"
+                  aria-label={`Open live demo of ${project.title}`}
                   className="
                     flex-1
                     flex
                     justify-center
                     items-center
                     gap-2
-                    py-3
+                    py-2
+                    sm:py-3
+                    px-3
+                    sm:px-4
+                    text-sm
+                    sm:text-base
                     rounded-xl
                     bg-linear-to-r
                     from-blue-500
                     to-purple-600
                     hover:scale-105
+                    hover:shadow-lg
                     transition
+                    min-h-10
                   "
                 >
                   <FaExternalLinkAlt />
                   Demo
                 </a>
+
+                {project.vercel && (
+                  <a
+                    href={project.vercel}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`Open Vercel deployment of ${project.title}`}
+                    className="
+                      flex-1
+                    flex
+                    justify-center
+                    items-center
+                      gap-2
+                      py-2
+                      sm:py-3
+                      px-3
+                      sm:px-4
+                      text-sm
+                      sm:text-base
+                      rounded-xl
+                      bg-slate-900
+                      text-white
+                      border
+                      border-white/10
+                      hover:brightness-110
+                      hover:shadow-lg
+                      transition
+                      min-h-10
+                    "
+                  >
+                    <SiVercel />
+                    Vercel
+                  </a>
+                )}
               </div>
             </div>
           </motion.div>

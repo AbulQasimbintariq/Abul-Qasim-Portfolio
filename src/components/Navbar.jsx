@@ -6,46 +6,59 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isDark, setIsDark] = useState(true);
 
+  const navLinks = [
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Projects", href: "#projects" },
+    { name: "Skills", href: "#skills" },
+    { name: "Contact", href: "#contact" },
+  ];
+
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
+
     if (savedTheme) {
       setIsDark(savedTheme === "dark");
-      document.documentElement.classList.toggle("dark", savedTheme === "dark");
+      document.documentElement.classList.toggle(
+        "dark",
+        savedTheme === "dark"
+      );
     }
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = !isDark ? "dark" : "light";
-    setIsDark(!isDark);
-    localStorage.setItem("theme", newTheme);
-    document.documentElement.classList.toggle("dark", newTheme === "dark");
+    const newTheme = !isDark;
+
+    setIsDark(newTheme);
+
+    document.documentElement.classList.toggle("dark", newTheme);
+
+    localStorage.setItem("theme", newTheme ? "dark" : "light");
   };
 
-  const navLinks = [
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
-  ];
-
   return (
-    <nav className="fixed top-0 left-0 w-full z-50">
-      <div className="mx-auto max-w-7xl px-6 py-4">
+    <nav className="fixed top-0 left-0 w-full z-50 px-4 py-4">
+      <div className="max-w-7xl mx-auto">
         <div
           className="
-          flex items-center justify-between
+          flex
+          items-center
+          justify-between
           rounded-2xl
           border border-white/10
           bg-white/5
           backdrop-blur-xl
-          px-6 py-4
+          px-4 sm:px-6
+          py-3 sm:py-4
           shadow-lg
         "
         >
           {/* Logo */}
           <h1
             className="
-            text-2xl
+            text-lg
+            sm:text-xl
+            md:text-2xl
             font-bold
             bg-linear-to-r
             from-blue-400
@@ -63,22 +76,23 @@ function Navbar() {
               <li key={link.name}>
                 <a
                   href={link.href}
+                  aria-label={`Navigate to ${link.name}`}
                   className="
-                  text-slate-300
-                  relative
-                  transition-all
-                  hover:text-white
-                  after:absolute
-                  duration-300
-                  after:-bottom-1
-                  after:left-0
-                  after:h-0.5
-                  after:w-0
-                  after:transition-all
-                  after:bg-blue-500
-                  hover:after:w-full
+                    text-sm
+                    text-slate-300
+                    relative
+                    transition-all
+                    duration-300
+                    hover:text-white
+                    after:absolute
+                    after:-bottom-1
+                    after:left-0
+                    after:h-0.5
+                    after:w-0
+                    after:bg-blue-500
+                    after:transition-all
+                    hover:after:w-full
                   "
-                  
                 >
                   {link.name}
                 </a>
@@ -86,55 +100,50 @@ function Navbar() {
             ))}
           </ul>
 
-          {/* Theme Toggle Button */}
-          <button
-            onClick={toggleTheme}
-            className="
-            hidden md:flex
-            items-center gap-2
-            px-4 py-2
-            rounded-xl
-            border border-white/20
-            hover:border-blue-500/50
-            hover:bg-white/5
-            transition
-          "
-            title="Toggle dark/light mode"
-          >
-            {isDark ? <FiSun size={20} /> : <FiMoon size={20} />}
-          </button>
+          {/* Right Side */}
+          <div className="flex items-center gap-3">
+            {/* Theme Toggle */}
+            <button
+              onClick={toggleTheme}
+              title="Toggle Theme"
+              className="
+                hidden md:flex
+                items-center
+                justify-center
+                w-10 h-10
+                rounded-xl
+                border border-white/20
+                hover:border-blue-500/50
+                hover:bg-white/5
+                transition
+              "
+            >
+              {isDark ? <FiSun size={20} /> : <FiMoon size={20} />}
+            </button>
 
-          {/* Mobile Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-3xl"
-          >
-            {isOpen ? <FiX /> : <FiMenu />}
-          </button>
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="md:hidden text-3xl"
+            >
+              {isOpen ? <FiX /> : <FiMenu />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
         <AnimatePresence>
           {isOpen && (
             <motion.div
-              initial={{
-                opacity: 0,
-                y: -20,
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
-              exit={{
-                opacity: 0,
-                y: -20,
-              }}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.3 }}
               className="
                 md:hidden
                 mt-3
                 rounded-2xl
-                border
-                border-white/10
+                border border-white/10
                 bg-slate-900/90
                 backdrop-blur-xl
                 overflow-hidden
@@ -149,9 +158,10 @@ function Navbar() {
                     block
                     px-6
                     py-4
-                    border-b
-                    border-white/10
+                    text-base
+                    border-b border-white/10
                     hover:bg-white/5
+                    transition
                   "
                 >
                   {link.name}
@@ -166,10 +176,12 @@ function Navbar() {
                 className="
                   w-full
                   py-4
-                  border-t border-white/10
+                  flex
+                  items-center
+                  justify-center
+                  gap-2
                   hover:bg-white/5
                   transition
-                  flex items-center justify-center gap-2
                 "
               >
                 {isDark ? <FiSun size={20} /> : <FiMoon size={20} />}

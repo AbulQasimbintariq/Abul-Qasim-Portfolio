@@ -11,7 +11,7 @@ function Home() {
     <>
       <Navbar />
 
-      <main className="pt-24">
+      <main id="main" className="pt-24">
         <Hero />
         <About />
         <Skills />

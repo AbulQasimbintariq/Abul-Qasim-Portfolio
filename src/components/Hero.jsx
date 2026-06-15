@@ -18,9 +18,12 @@ function Hero() {
       flex
       items-center
       justify-center
-      px-6
+      px-4
+      sm:px-6
+      md:px-8
       relative
       overflow-hidden
+      pt-20
     "
     >
       {/* Background Glow */}
@@ -80,8 +83,10 @@ function Hero() {
               duration: 0.8,
             }}
             className="
-              text-5xl
-              md:text-7xl
+              text-3xl
+              sm:text-4xl
+              md:text-6xl
+              lg:text-7xl
               font-bold
               leading-tight
             "
@@ -113,7 +118,9 @@ function Hero() {
             }}
             className="
               mt-4
-              text-2xl
+              text-lg
+              sm:text-xl
+              md:text-2xl
               text-slate-300
             "
           >
@@ -132,6 +139,8 @@ function Hero() {
             }}
             className="
               mt-6
+              text-sm
+              sm:text-base
               text-slate-400
               max-w-xl
               leading-relaxed
@@ -144,21 +153,27 @@ function Hero() {
 
           {/* Buttons */}
 
-          <div className="flex gap-4 mt-8 flex-wrap">
+          <div className="flex flex-col sm:flex-row gap-4 mt-8 flex-wrap">
             <a
               href="#projects"
               className="
-                px-6
+                px-4
+                sm:px-6
                 py-3
+                sm:py-3
+                text-sm
+                sm:text-base
                 rounded-xl
                 bg-linear-to-r
                 from-blue-500
                 to-purple-600
                 hover:scale-105
+                hover:shadow-lg
                 transition
                 inline-flex
                 items-center
                 justify-center
+                min-h-12
               "
             >
               View Projects
@@ -168,8 +183,12 @@ function Hero() {
               href="/resume_ats.pdf"
               download
               className="
-                px-6
+                px-4
+                sm:px-6
                 py-3
+                sm:py-3
+                text-sm
+                sm:text-base
                 rounded-xl
                 border
                 border-slate-700

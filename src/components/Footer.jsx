@@ -3,7 +3,7 @@ function Footer() {
     <footer className="bg-slate-950 p-6 text-center">
 
       <p>
-        © 2026 Umair Ali. All Rights Reserved.
+        © 2026 Abul Qasim Bin Tariq. All Rights Reserved.
       </p>
 
     </footer>

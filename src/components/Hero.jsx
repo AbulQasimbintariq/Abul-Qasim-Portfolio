@@ -145,7 +145,8 @@ function Hero() {
           {/* Buttons */}
 
           <div className="flex gap-4 mt-8 flex-wrap">
-            <button
+            <a
+              href="#projects"
               className="
                 px-6
                 py-3
@@ -155,12 +156,17 @@ function Hero() {
                 to-purple-600
                 hover:scale-105
                 transition
+                inline-flex
+                items-center
+                justify-center
               "
             >
               View Projects
-            </button>
+            </a>
 
-            <button
+            <a
+              href="/resume_ats.pdf"
+              download
               className="
                 px-6
                 py-3
@@ -169,10 +175,13 @@ function Hero() {
                 border-slate-700
                 hover:border-blue-500
                 transition
+                inline-flex
+                items-center
+                justify-center
               "
             >
               Download Resume
-            </button>
+            </a>
           </div>
 
           {/* Social Icons */}

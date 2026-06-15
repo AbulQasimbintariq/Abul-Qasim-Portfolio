@@ -1,0 +1,82 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 0 >>
+stream
+BT
+/F1 12 Tf
+72 760 Td
+(Abul Qasim Bin Tariq) Tj
+0 -16 Td
+(Frontend Developer) Tj
+0 -16 Td
+(Email: your@email.com) Tj
+0 -20 Td
+(Summary:) Tj
+0 -16 Td
+(Passionate Frontend Developer focused on building modern and user-friendly web applications.) Tj
+0 -16 Td
+()
+0 -12 Td
+(Skills:) Tj
+0 -16 Td
+(HTML, CSS, JavaScript, React, Tailwind, Git, GitHub, Vite) Tj
+0 -20 Td
+(Projects:) Tj
+0 -16 Td
+(Currency Converter) Tj
+0 -16 Td
+(Real-time currency converter supporting 50+ currencies using API integration.) Tj
+0 -16 Td
+(Tech: React, Vite, Tailwind, API) Tj
+0 -16 Td
+(Demo: https://currency-converter.vercel.app) Tj
+0 -16 Td
+(GitHub: https://github.com/yourusername/currency-converter) Tj
+0 -20 Td
+(Developer Portfolio) Tj
+0 -16 Td
+(Modern personal portfolio with animations, responsive design and professional UI.) Tj
+0 -16 Td
+(Tech: React, Tailwind, Framer Motion) Tj
+0 -16 Td
+(Demo: https://portfolio.vercel.app) Tj
+0 -16 Td
+(GitHub: https://github.com/yourusername/portfolio) Tj
+0 -20 Td
+(E-Commerce Store) Tj
+0 -16 Td
+(Responsive shopping interface with cart functionality and modern UX.) Tj
+0 -16 Td
+(Tech: React, Tailwind, Context API) Tj
+0 -16 Td
+(Demo: https://ecommerce.vercel.app) Tj
+0 -16 Td
+(GitHub: https://github.com/yourusername/ecommerce) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000010 00000 n 
+0000000061 00000 n 
+0000000118 00000 n 
+0000000204 00000 n 
+0000000441 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+547
+%%EOF

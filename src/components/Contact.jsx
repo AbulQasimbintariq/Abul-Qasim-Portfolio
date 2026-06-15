@@ -8,7 +8,7 @@ function Contact() {
 
       <div className="text-center">
 
-        <p>Email: your@email.com</p>
+        <p>Email: qasimbhalli6547@gmail.com</p>
 
       </div>
 

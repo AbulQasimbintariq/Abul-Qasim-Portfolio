@@ -1,0 +1,9 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title>Developer Portfolio</title>
+  <rect width="800" height="600" rx="40" fill="#6A1B9A" />
+  <rect x="120" y="150" width="560" height="320" rx="30" fill="#8E24AA" opacity="0.95" />
+  <rect x="180" y="210" width="440" height="40" rx="12" fill="#E1BEE7" />
+  <rect x="180" y="280" width="340" height="24" rx="12" fill="#F3E5F5" />
+  <rect x="180" y="330" width="290" height="24" rx="12" fill="#F3E5F5" />
+  <text x="50%" y="520" text-anchor="middle" font-size="42" font-family="Inter, sans-serif" fill="#fff" font-weight="700">Developer Portfolio</text>
+</svg>

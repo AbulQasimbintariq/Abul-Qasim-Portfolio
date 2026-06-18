@@ -7,6 +7,7 @@ import {
   FaCss3Alt,
   FaJs,
 } from "react-icons/fa";
+import { SiVercel } from "react-icons/si";
 
 import profile from "../assets/hero.png";
 
@@ -124,7 +125,7 @@ function Hero() {
               text-slate-300
             "
           >
-            React Frontend Developer
+            Full Stack Developer
           </motion.h2>
 
           <motion.p
@@ -146,10 +147,10 @@ function Hero() {
               leading-relaxed
             "
           >
-            I build modern, fast and responsive web applications
-            using React, JavaScript, Tailwind CSS and modern frontend
-            technologies.
-          </motion.p>
+            I'm a passionate developer with experience in building web applications using modern technologies.
+            I love creating clean and efficient code to solve real-world problems.
+            I'm always eager to learn new technologies and take on exciting projects.
+            </motion.p>
 
           {/* Buttons */}
 
@@ -206,11 +207,15 @@ function Hero() {
           {/* Social Icons */}
 
           <div className="flex gap-5 mt-8 text-2xl">
-            <a href="#">
+            <a href="https://github.com/AbulQasimbintariq" target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </a>
 
-            <a href="#">
+            <a href="https://vercel.com/abul-qasim-projects" target="_blank" rel="noopener noreferrer" aria-label="Vercel">
+              <SiVercel />
+            </a>
+
+            <a href="https://www.linkedin.com/in/abul-qasim-bin-tariq-074a41323" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
             </a>
           </div>
@@ -313,7 +318,7 @@ function Hero() {
               duration: 1,
             }}
             src={profile}
-            alt="Umair Ali"
+            alt="Abul Qasim Bin Tariq"
             className="
               w-80
               h-80

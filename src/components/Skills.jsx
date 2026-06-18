@@ -4,11 +4,22 @@ const skills = [
   "HTML",
   "CSS",
   "JavaScript",
+  "TypeScript",
   "React",
   "Tailwind",
   "Git",
   "GitHub",
   "Vite",
+  "Python",
+  "Streamlit",
+  "Bootstrap",
+  "Next.js",
+  "Word",
+  "Excel",
+  "PowerPoint",
+  "Obsidian",
+  "Framer Motion",
+  
 ];
 
 function Skills() {

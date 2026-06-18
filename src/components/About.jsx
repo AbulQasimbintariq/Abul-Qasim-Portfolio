@@ -16,10 +16,11 @@ function About() {
         </h2>
 
         <p className="max-w-4xl mx-auto text-center text-sm sm:text-base text-slate-400 leading-relaxed">
-          Passionate Frontend Developer focused on building
-          modern and user-friendly web applications. I specialize in
-          creating responsive designs and optimized user experiences
-          across all devices.
+          I'm a professional with a strong educational background in commerce and expertise in front-end development.
+            Having completed his FSC from Fazaiya College Karachi and an Associated Degree in Commerce from Karachi University,
+            I have gained valuable experience as a Front End Developer specializing in React, Next.js, bootstrap, and Streamlit.
+            Currently, I serve as a Fair Collection Manager at Greenline BRT Project Karachi, where I oversee cash handling, public dealing, team supervision, and equipment safety.
+            With skills in Word, Excel, and PowerPoint, I am a versatile and dynamic professional. 💻
         </p>
 
       </motion.div>

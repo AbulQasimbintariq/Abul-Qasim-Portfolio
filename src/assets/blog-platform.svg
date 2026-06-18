@@ -1,0 +1,10 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title>Blog Platform</title>
+  <rect width="800" height="600" rx="40" fill="#37474F" />
+  <rect x="150" y="160" width="500" height="320" rx="34" fill="#546E7A" opacity="0.95" />
+  <rect x="230" y="220" width="340" height="40" rx="16" fill="#CFD8DC" />
+  <rect x="230" y="290" width="280" height="20" rx="10" fill="#B0BEC5" />
+  <rect x="230" y="330" width="280" height="20" rx="10" fill="#B0BEC5" />
+  <rect x="230" y="370" width="340" height="20" rx="10" fill="#B0BEC5" />
+  <text x="50%" y="520" text-anchor="middle" font-size="42" font-family="Inter, sans-serif" fill="#fff" font-weight="700">Blog Platform</text>
+</svg>

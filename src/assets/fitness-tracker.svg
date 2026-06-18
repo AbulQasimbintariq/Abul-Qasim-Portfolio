@@ -1,0 +1,9 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title>Fitness Tracker</title>
+  <rect width="800" height="600" rx="40" fill="#C62828" />
+  <rect x="150" y="160" width="500" height="280" rx="36" fill="#E53935" opacity="0.95" />
+  <path d="M220 380 q80 -120 160 -50 q80 70 160 -50" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" />
+  <circle cx="220" cy="380" r="22" fill="#fff" />
+  <circle cx="500" cy="280" r="22" fill="#fff" />
+  <text x="50%" y="520" text-anchor="middle" font-size="42" font-family="Inter, sans-serif" fill="#fff" font-weight="700">Fitness Tracker</text>
+</svg>

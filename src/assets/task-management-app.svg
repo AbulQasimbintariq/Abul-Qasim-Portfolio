@@ -1,0 +1,12 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title>Task Management App</title>
+  <rect width="800" height="600" rx="40" fill="#F57C00" />
+  <rect x="140" y="140" width="520" height="320" rx="34" fill="#FB8C00" opacity="0.95" />
+  <line x1="200" y1="220" x2="600" y2="220" stroke="#fff" stroke-width="18" stroke-linecap="round" />
+  <line x1="200" y1="290" x2="520" y2="290" stroke="#fff" stroke-width="18" stroke-linecap="round" />
+  <line x1="200" y1="360" x2="520" y2="360" stroke="#fff" stroke-width="18" stroke-linecap="round" />
+  <circle cx="170" cy="220" r="18" fill="#fff" />
+  <circle cx="170" cy="290" r="18" fill="#fff" />
+  <circle cx="170" cy="360" r="18" fill="#fff" />
+  <text x="50%" y="520" text-anchor="middle" font-size="42" font-family="Inter, sans-serif" fill="#fff" font-weight="700">Task Manager</text>
+</svg>

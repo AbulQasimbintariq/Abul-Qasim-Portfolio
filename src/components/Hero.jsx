@@ -181,7 +181,7 @@ function Hero() {
             </a>
 
             <a
-              href="/resume_ats.pdf"
+              href="/Abul_Qasim_Resume.pdf"
               download
               className="
                 px-4
@@ -200,7 +200,7 @@ function Hero() {
                 justify-center
               "
             >
-              Download Resume
+              View Resume
             </a>
           </div>
 

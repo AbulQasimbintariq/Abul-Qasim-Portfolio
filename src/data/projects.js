@@ -1,5 +1,5 @@
-import currencyImg from "../assets/currency-converter.svg";
-import portfolioImg from "../assets/developer-portfolio.svg";
+import OrderByYourselfImg from "../assets/OrderByYourself.png";
+import AI_Job_PortalImg from "../assets/AI_Job_Img.png";
 import ecommerceImg from "../assets/e-commerce-store.svg";
 import taskManagementImg from "../assets/task-management-app.svg";
 import brtDashboardImg from "../assets/brt-dashboard.svg";
@@ -12,26 +12,26 @@ import socialMediaImg from "../assets/social-media-dashboard.svg";
 const projects = [
   {
     id: 1,
-    title: "Currency Converter",
+    title: "OrderByYourself",
     description:
       "Real-time currency converter supporting 50+ currencies using API integration.",
-    image: currencyImg,
-    tech: ["React", "Vite", "Tailwind", "API"],
-    github: "https://github.com/AbulQasimbintariq/React-Currency-Converter",
-    demo: "https://currency-converter.vercel.app",
-    vercel: "https://currency-converter.vercel.app",
+    image: OrderByYourselfImg,
+    tech: ["Next.js", "Typscript", "Tailwind Css", "API","MongoDB"],
+    github: "https://github.com/AbulQasimbintariq",
+    demo: "https://order-by-yourself-frontend.vercel.app/",
+    vercel: "https://vercel.com/abul-qasim-projects",
   },
 
   {
     id: 2,
-    title: "Developer Portfolio",
+    title: "AI_Job_Portal",
     description:
       "Modern personal portfolio with animations, responsive design and professional UI.",
-    image: portfolioImg,
-    tech: ["React", "Tailwind", "Framer Motion"],
-    github: "https://github.com/yourusername/portfolio",
-    demo: "https://portfolio.vercel.app",
-    vercel: "https://abul-qasim-bin-tariq.vercel.app/",
+    image: AI_Job_PortalImg,
+    tech: ["Next.js", "Tailwind Css", "Typscript", "API","MongoDB"],
+    github: "https://github.com/AbulQasimbintariq",
+    demo: "https://ai-job-portalfrontend.vercel.app/",
+    vercel: "https://vercel.com/abul-qasim-projects",
   },
 
   {
@@ -41,9 +41,9 @@ const projects = [
       "Responsive shopping interface with cart functionality and modern UX.",
     image: ecommerceImg,
     tech: ["React", "Tailwind", "Context API"],
-    github: "https://github.com/AbulQasimbintariq/bootstrap-P1",
+    github: "https://github.com/AbulQasimbintariq",
     demo: "https://ecommerce.vercel.app",
-    vercel: "https://abul-qasim-bin-tariq.vercel.app/",
+    vercel: "https://vercel.com/abul-qasim-projects",
   },
 
   {
@@ -53,9 +53,9 @@ const projects = [
       "Full-featured task management system with drag-and-drop, filters, and local storage.",
     image: taskManagementImg,
     tech: ["React", "Tailwind", "Local Storage"],
-    github: "https://github.com/AbulQasimbintariq/React-OrderBYSelf",
+    github: "https://github.com/AbulQasimbintariq",
     demo: "https://task-manager.vercel.app",
-    vercel: "https://react-order-by-self.vercel.app/#",
+    vercel: "https://vercel.com/abul-qasim-projects",
   },
 
   {
@@ -65,9 +65,9 @@ const projects = [
       "Real-time weather application with location search and detailed forecasts.",
     image: brtDashboardImg,
     tech: ["React", "OpenWeather API", "Chart.js", "Tailwind"],
-    github: "https://github.com/AbulQasimbintariq/Brt-Dashboard",
+    github: "https://github.com/AbulQasimbintariq",
       demo: "https://brt-dashboard.vercel.app",
-      vercel: "https://brt-dashboard.vercel.app",
+      vercel: "https://vercel.com/abul-qasim-projects",
   },
 
   {
@@ -77,9 +77,9 @@ const projects = [
       "Interactive movie search engine with ratings, reviews, and recommendation system.",
     image: movieFinderImg,
     tech: ["React", "TMDB API", "Axios", "Tailwind"],
-    github: "https://github.com/yourusername/movie-finder",
+    github: "https://github.com/AbulQasimbintariq",
     demo: "https://movie-finder.vercel.app",
-    vercel: "https://movie-finder.vercel.app",
+    vercel: "https://vercel.com/abul-qasim-projects",
   },
 
   {
@@ -89,9 +89,9 @@ const projects = [
       "Complete fitness tracking app with workout logs, progress charts, and goal setting.",
     image: fitnessTrackerImg,
     tech: ["React", "Firebase", "Recharts", "Tailwind"],
-    github: "https://github.com/yourusername/fitness-tracker",
+    github: "https://github.com/AbulQasimbintariq",
     demo: "https://fitness-tracker.vercel.app",
-    vercel: "https://fitness-tracker.vercel.app",
+    vercel: "https://vercel.com/abul-qasim-projects",
   },
 
   {
@@ -101,9 +101,9 @@ const projects = [
       "Real-time messaging platform with user authentication and instant notifications.",
     image: chatAppImg,
     tech: ["React", "Socket.io", "Node.js", "MongoDB"],
-    github: "https://github.com/yourusername/chat-app",
+    github: "https://github.com/AbulQasimbintariq",
     demo: "https://chat-app.vercel.app",
-    vercel: "https://chat-app.vercel.app",
+    vercel: "https://vercel.com/abul-qasim-projects",
   },
 
   {
@@ -113,9 +113,9 @@ const projects = [
       "Full-stack blogging platform with markdown support, comments, and user authentication.",
     image: blogPlatformImg,
     tech: ["React", "Express.js", "PostgreSQL", "JWT"],
-    github: "https://github.com/yourusername/blog-platform",
+    github: "https://github.com/AbulQasimbintariq",
     demo: "https://blog-platform.vercel.app",
-    vercel: "https://hack2-2.vercel.app/",
+    vercel: "https://vercel.com/abul-qasim-projects",
   },
 
   {
@@ -125,9 +125,9 @@ const projects = [
       "Analytics dashboard displaying social media metrics with real-time data visualization.",
     image: socialMediaImg,
     tech: ["React", "D3.js", "REST API", "Tailwind"],
-    github: "https://github.com/yourusername/social-dashboard",
+    github: "https://github.com/AbulQasimbintariq",
     demo: "https://social-dashboard.vercel.app",
-    vercel: "https://social-dashboard.vercel.app",
+    vercel: "https://vercel.com/abul-qasim-projects",
   },
 ];
 
